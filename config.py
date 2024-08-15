@@ -5,17 +5,17 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-API_ID = int(os.environ.get("API_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7519577315:AAE1PgpiOxPD2tzz9_3b0c4bLLIUrxezGV8")
+API_ID = int(os.environ.get("API_ID", "23067288"))
+API_HASH = os.environ.get("API_HASH", "51dc4c2a40712c1971165e90c47c01d6")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
-DB_URL = os.environ.get("DB_URL", "")
+OWNER_ID = int(os.environ.get("OWNER_ID", "5255212383"))
+DB_URL = os.environ.get("DB_URL", "mongodb.com")
 DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-100224669435"))
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 
@@ -28,7 +28,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 try:
-    ADMINS=[7085541484]
+    ADMINS=[5255212383]
     for x in (os.environ.get("ADMINS", "5115691197 6273945163 6103092779 5231212075").split()):
         ADMINS.append(int(x))
 except ValueError:
@@ -67,7 +67,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need 
 
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(7085541484)
+ADMINS.append(5255212383)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
